@@ -210,7 +210,7 @@ const pets = [
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
-    }
+    },
   ];
 
 
@@ -227,14 +227,14 @@ const petBuilder = (animal) => {
         petString += `<div class="card">`;
         petString += `<h2>${pet.name}</h2>`;
         petString += `<img src=${pet.imageUrl}></img>`;
-        petString += `<p>${pet.color}</p>`
-        petString += `<p>${pet.specialSkill}</p>`
-        petString += `<p>${pet.type}</p>`
+        petString += `<p>${pet.color}</p>`;
+        petString += `<p>${pet.specialSkill}</p>`;
+        petString += `<p>${pet.type}</p>`;
         petString += `</div>`;
     })
     
 
-    printToDom('pets', petString);
+    printToDom('myPets', petString);
 };
 
 const buttonClick =(e) => {
@@ -244,7 +244,7 @@ const buttonClick =(e) => {
     //once we have all the pets for the instructor - call pets
     const selectedPets = [];
     pets.forEach((pet) => {
-        if(pet.instructor === buttonId) {
+        if(pet.type === buttonId) {
             selectedPets.push(pet);
         }
     });
