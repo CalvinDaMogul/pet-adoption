@@ -1,3 +1,61 @@
 body {
-    background-color: blueviolet;
+    background-color: burlywood;
 }
+
+.header {
+    color: darkgrey;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+}
+
+#pets {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid darkgray;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px; 
+    
+  }
+  
+  .card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: #73AD21;
+  }
+
+.button {
+    background-color: lightslategray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .button:hover {
+    background-color: #f1f1f1;
+  }
