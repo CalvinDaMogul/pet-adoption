@@ -227,9 +227,11 @@ const petBuilder = (animal) => {
         petString += `<div class="card">`;
         petString += `<h2>${pet.name}</h2>`;
         petString += `<img src=${pet.imageUrl}></img>`;
+        petString += `<div class="pcard">`;
         petString += `<p>${pet.color}</p>`;
         petString += `<p>${pet.specialSkill}</p>`;
         petString += `<p>${pet.type}</p>`;
+        petString += `</div>`;
         petString += `</div>`;
     })
     
