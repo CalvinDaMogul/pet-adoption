@@ -267,7 +267,7 @@ const buttonEvents = () => {
 };
 
 const init =() => {
-
+    console.log('Hi');
     buttonEvents();
     petBuilder(pets);
 };
